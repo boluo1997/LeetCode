@@ -19,8 +19,6 @@ public class Test23_maximum69Number {
                 nums[i] = '9';
                 break A;
             }
-            //break A;
-            //为什么把break:A;放这里 结果会是9669;
         }
 
         int result = Integer.parseInt(String.valueOf(nums));
