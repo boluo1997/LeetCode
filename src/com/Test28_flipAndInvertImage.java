@@ -19,7 +19,7 @@ public class Test28_flipAndInvertImage {
     }
 
     public static int[][] flipAndInvertImage(int[][] A){
-        int[][] temp = new int[A.length][];
+        int[][] temp = new int[A.length][A[0].length];
 
         for(int i=0;i<A.length;i++){
             /*for(int j=A[i].length-1;j>=0;j--){
@@ -41,6 +41,35 @@ public class Test28_flipAndInvertImage {
         }
 
         return temp;
+    }
+
+
+    //大佬的双指针解法
+    public static int[][] flipAndInvertImg(int[][] A){
+        //我们研究题意可知  假如之前是 11000   水平翻转之后是00011   图像翻转之后是11100
+        //可知前后对应的两个数如果不同的话,图像翻转之后数值不变,相同的话从0-1或1-0即可
+
+        for(int i=0;i<A.length;i++){
+
+            int start = 0;              //左指针从前往后
+            int end = A[i].length-1;    //右指针从后往前
+
+            while(start < end){
+                if(A[i][start] != A[i][end]){
+                    start++;
+                    end--;
+                }else {
+                    A[i][start] = A[i][start] == 0 ? 1 : 0;
+                    A[i][end] = A[i][end] == 0 ? 1 : 0;
+                }
+            }
+
+            if(start == end){
+                A[i][start] = A[i][start] == 0 ? 1 : 0;
+            }
+        }
+
+        return A;
     }
 }
 
