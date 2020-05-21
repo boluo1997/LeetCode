@@ -11,14 +11,12 @@ public class Test33_isUnique {
 
     public boolean isUnique(String astr) {
 
-        for(int i=0;i<astr.length();i++){
-            astr = astr.replace(String.valueOf(astr.charAt(i)),"");
-
-            if(astr.length() != astr.length()-1){
+        for (int i=0;i<astr.length();i++){
+            String s=astr;
+            s=s.replace(String.valueOf(s.charAt(i)),"");
+            if (s.length()!=astr.length()-1)
                 return false;
-            }
         }
-
         return true;
     }
 }
