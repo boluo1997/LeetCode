@@ -25,6 +25,58 @@ select w1.Id
 from Weather w1, Weather w2
 where w1.Temperature > w2.Temperature and DATEDIFF(w1.RecordDate, w2.RecordDate) = 1
 
+/*      596. 超过5名学生的课
+
+有一个courses 表 ，有: student (学生) 和 class (课程)。
+请列出所有超过或等于5名学生的课。
+
+例如,表:
+
++---------+------------+
+| student | class      |
++---------+------------+
+| A       | Math       |
+| B       | English    |
+| C       | Math       |
+| D       | Biology    |
+| E       | Math       |
+| F       | Computer   |
+| G       | Math       |
+| H       | Math       |
+| I       | Math       |
++---------+------------+
+应该输出:
+
++---------+
+| class   |
++---------+
+| Math    |
++---------+
+Note:
+学生在每个课中不应被重复计算。
+*/
+
+/*先统计每门课程的学生数量，再从中选择超过 5 名学生的课程。*/
+select class
+from courses
+group by class
+having count(distinct student)>5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
