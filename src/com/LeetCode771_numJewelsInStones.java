@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class LeetCode771_numJewelsInStones {
-    
+
     public int numJewelsInStones(String J, String S) {
         //遍历每块石头,检查是不是宝石,检查的步骤用哈希集合
         Set<Character> Jset = new HashSet<>();
