@@ -3,7 +3,7 @@ package com;
 import java.util.Stack;
 
 //倒序打印链表到数组中
-public class Test10_reversePrint {
+public class Offer24_reversePrint {
     public static void main(String[] args) {
 
     }
@@ -24,5 +24,15 @@ public class Test10_reversePrint {
         }
 
         return nums;
+    }
+
+    class ListNode {
+
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
     }
 }

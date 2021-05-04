@@ -5,7 +5,7 @@ package com;
  *
  * 所谓无效化 IP 地址，其实就是用 "[.]" 代替了每个 "."
  */
-public class Test01_defangIPaddr {
+public class LeetCode1108_defangIPaddr {
     public static void main(String[] args) {
 
     }

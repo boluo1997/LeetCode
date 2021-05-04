@@ -7,7 +7,7 @@ package com;
  * 并且这 n 个数相加和为 0 。
  *
  */
-public class Test26_sumZero {
+public class LeetCode1304_sumZero {
     public static void main(String[] args) {
 
     }

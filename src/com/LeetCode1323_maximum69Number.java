@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 从前往后找到第一个6 , 把6变成9
  */
 
-public class Test23_maximum69Number {
+public class LeetCode1323_maximum69Number {
     public static void main(String[] args) {
         System.out.println(maximum69Number(9669));
     }

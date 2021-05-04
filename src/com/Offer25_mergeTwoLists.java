@@ -3,7 +3,7 @@ package com;
 /**
  *  输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。
  */
-public class Test32_mergeTwoLists {
+public class Offer25_mergeTwoLists {
     public static void main(String[] args) {
 
     }
@@ -25,5 +25,15 @@ public class Test32_mergeTwoLists {
         cur.next = l1 != null ? l1 : l2;
         return dum.next;
 
+    }
+
+    class ListNode {
+
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
     }
 }

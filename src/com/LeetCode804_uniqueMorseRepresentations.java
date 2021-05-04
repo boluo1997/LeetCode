@@ -13,7 +13,7 @@ import java.util.Set;
  *
  */
 
-public class Test31_uniqueMorseRepresentations {
+public class LeetCode804_uniqueMorseRepresentations {
     public static void main(String[] args) {
 
     }

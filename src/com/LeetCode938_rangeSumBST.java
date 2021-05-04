@@ -5,7 +5,7 @@ package com;
  *
  * 二叉搜索树保证具有唯一的值。
  */
-public class Test09_rangeSumBST {
+public class LeetCode938_rangeSumBST {
 
     int result;
 
@@ -25,6 +25,16 @@ public class Test09_rangeSumBST {
         }
 
         return result;
+    }
+
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }
 

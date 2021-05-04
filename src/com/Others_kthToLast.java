@@ -3,7 +3,7 @@ package com;
 /**
  * 实现一种算法，找出单向链表中倒数第 k 个节点。返回该节点的值。
  */
-public class Test03_kthToLast {
+public class Others_kthToLast {
     public static void main(String[] args) {
 
     }
@@ -25,8 +25,15 @@ public class Test03_kthToLast {
         return p.val;
     }
 
+    class ListNode {
 
+        int val;
+        ListNode next;
 
+        ListNode(int x) {
+            val = x;
+        }
+    }
 
 }
 

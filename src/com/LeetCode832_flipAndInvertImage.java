@@ -13,7 +13,7 @@ package com;
  *
  *
  */
-public class Test28_flipAndInvertImage {
+public class LeetCode832_flipAndInvertImage {
     public static void main(String[] args) {
 
     }

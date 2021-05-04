@@ -6,7 +6,7 @@ package com;
  * 输入: head = [4,5,1,9], node = 5
  * 输出: [4,1,9]
  */
-public class Test02_deleteNode {
+public class LeetCode237_deleteNode {
     public static void main(String[] args) {
 
     }
@@ -16,15 +16,16 @@ public class Test02_deleteNode {
         node.next = node.next.next;
     }
 
+    class ListNode {
 
-}
+        int val;
+        ListNode next;
 
-class ListNode {
-
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
+        ListNode(int x) {
+            val = x;
+        }
     }
+
 }
+
+

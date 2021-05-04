@@ -15,7 +15,7 @@ package com;
  * 也就是说result一直在存储着当前的最大子序和,而sum是+1之后的子序和
  * 因为这里用的是sum+=nums[j] 所以sum也就是存储的是前面的累计的值,而不是当前和下一个这两个的值
  */
-public class Test25_maxSubArray {
+public class LeetCode53_maxSubArray {
     public static void main(String[] args) {
 
     }

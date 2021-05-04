@@ -2,7 +2,7 @@ package com;
 
 //返回二叉树深度
 
-public class Test04_maxDepth {
+public class Offer55_maxDepth {
     public static void main(String[] args) {
 
     }
@@ -17,14 +17,17 @@ public class Test04_maxDepth {
             return nl > nr ? nl+1 : nr+1;
         }
     }
-}
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
 
-    TreeNode(int x) {
-        val = x;
+        TreeNode(int x) {
+            val = x;
+        }
     }
+
 }
+
+

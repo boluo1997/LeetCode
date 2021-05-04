@@ -10,7 +10,7 @@ package com;
  *
  */
 
-public class Test35_goodNums {
+public class LeetCode1512_goodNums {
     public int numIdenticalPairs(int[] nums) {
 
         int sum = 0;

@@ -13,7 +13,7 @@ import java.util.List;
  * 将额外的 extraCandies 个糖果分配给孩子们之后，此孩子有 最多 的糖果。
  *
  */
-public class Test27_kidsWithCandies {
+public class LeetCode1431_kidsWithCandies {
     public static void main(String[] args) {
 
     }

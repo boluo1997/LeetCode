@@ -3,7 +3,7 @@ package com;
 /**
  * 给一个二叉树,输出它的镜像二叉树
  */
-public class Test07_mirrorTree {
+public class Offer27_mirrorTree {
     public static void main(String[] args) {
 
     }
@@ -19,5 +19,15 @@ public class Test07_mirrorTree {
             return root;
         }
 
+    }
+
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }

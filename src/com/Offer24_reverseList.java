@@ -2,7 +2,7 @@ package com;
 
 import java.util.Stack;
 
-public class Test12_reverseList {
+public class Offer24_reverseList {
     public static void main(String[] args) {
 
     }
@@ -48,6 +48,16 @@ public class Test12_reverseList {
 
         return no;
 
+    }
+
+    class ListNode {
+
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
     }
 }
 

@@ -15,7 +15,7 @@ package com;
  * 9   6 3   1
  *
  */
-public class Test24_invertTree {
+public class LeetCode226_invertTree {
     public static void main(String[] args) {
 
     }
@@ -38,6 +38,16 @@ public class Test24_invertTree {
         root.right = temp;
 
         return root;
+    }
+
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }
 
