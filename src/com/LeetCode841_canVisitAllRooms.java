@@ -35,4 +35,19 @@ public class LeetCode841_canVisitAllRooms {
         }
         return set.size() == rooms.size();
     }
+
+    public boolean canVisitAllRooms_lambda(List<List<Integer>> rooms) {
+        return dfs(rooms, 0, new HashSet<>()) == rooms.size();
+    }
+
+    private int dfs(List<List<Integer>> rooms, int room, HashSet<Integer> res) {
+        res.add(room);
+        rooms.get(room)
+                .stream()
+                .filter(r -> !res.contains(r))  // 这里会过滤出, 有效的房间的钥匙
+                .forEach(r -> dfs(rooms, r, res));  // 下一步会把房间钥匙加到res中
+
+        return res.size();
+    }
+
 }
